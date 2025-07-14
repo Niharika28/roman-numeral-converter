@@ -10,12 +10,12 @@
 
 
 ### User Interface details
-Front end code is under the folder <B>roman-numeral-app</B> 
+Front end code is under the folder <B>roman-numeral</B> 
 Adobe react spectrum components are used for the Form fields and colorScheme
 #### Testing UI
 Run following command to start app on your local machine.
     
-    cd roman-numeral-app
+    cd roman-numeral
     npm install
     npm start
 This will start the frontend/UI on port `3000`, available at http://localhost:3000    

@@ -7,8 +7,8 @@ services:
       - "8080:8080"
     networks:
       - adobe
-  roman-numeral-app:
-    build: ./roman-numeral-app
+  roman-numeral:
+    build: roman-numeral
     container_name: react-ui
     ports:
       - "3000:80"
@@ -21,7 +21,7 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - roman-numeral-app
+      - roman-numeral
       - roman-numeral-api
     networks:
       adobe:
