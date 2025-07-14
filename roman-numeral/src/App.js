@@ -90,6 +90,7 @@ function App() {
                 isRequired
                 necessityIndicator="label"
                 width="size-2000"
+                type="number"
               />
             </View>
             <br />
