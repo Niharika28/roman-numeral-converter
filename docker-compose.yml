@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  roman-numeral-api:
+    build: ./roman-numeral-api
+    container_name: roman-numeral-api
+    ports:
+      - "8080:8080"
+    networks:
+      - adobe
+  roman-numeral-app:
+    build: ./roman-numeral-app
+    container_name: react-ui
+    ports:
+      - "3000:80"
+    depends_on:
+      - roman-numeral-api
+    networks:
+      - adobe
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - roman-numeral-app
+      - roman-numeral-api
+    networks:
+      adobe:
+
+networks:
+  adobe:
+    driver: bridge
