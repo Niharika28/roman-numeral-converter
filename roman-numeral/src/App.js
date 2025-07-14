@@ -58,6 +58,7 @@ function App() {
         return;
       }
       const data = await response.json();
+      console.log("Roman numeral ::" + data.output);
       setRomanNumeral(data.output);
     } catch (err) {
       setError("Somthing fail while calling api" + err);

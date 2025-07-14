@@ -29,7 +29,7 @@ public class RomanNumeralServiceImpl implements RomanNumeralService {
                 input -= numbers.get(i);
             }
         }
-
+        log.info("For given Input Number:: {} Roman Numeral is ::",initialInput,romanNumeral);
         return RomanNumeralResponse.builder().input(initialInput).output(romanNumeral.toString()).build();
     }
 }
