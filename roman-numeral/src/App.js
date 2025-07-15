@@ -21,7 +21,7 @@ function App() {
   //This is to set color based on the system settings
   const [colorScheme, setColorScheme] = useState("light");
 
-  //Detect system color schemes
+  //Detects system color schemes
   useEffect(() => {
     const systemColor = window.matchMedia("(prefers-color-scheme: dark)");
     //function sets the colorScheme based on the system color

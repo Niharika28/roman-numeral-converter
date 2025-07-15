@@ -3,7 +3,9 @@
 1. Accepts an Integer between 0 and 3999
 2. Submit the number to backend api for converting to roman numeral 
 3. It either displays roman numeral or error
-4. Fully dockerized: run the entire application with single command
+4. Using Java + SpringBoot application for the api
+5. Used spring-boot-starter-web, spring-boot-starter-test, lombok to reduce boilerplate code, loggers
+5. Fully dockerized: run the entire application with single command
    
     
     docker compose up --build
@@ -12,6 +14,7 @@
 ### User Interface details
 Front end code is under the folder <B>roman-numeral</B> 
 Adobe react spectrum components are used for the Form fields and colorScheme
+
 #### Testing UI
 Run following command to start app on your local machine.
     
