@@ -1,15 +1,20 @@
 # Full Stack Web Application for converting given Number to Roman Numeral
 
-1. Accepts an Integer between 0 and 3999
-2. Submit the number to backend api for converting to roman numeral 
-3. It either displays roman numeral or error
-4. Using Java + SpringBoot application for the api
-5. Used spring-boot-starter-web, spring-boot-starter-test, lombok to reduce boilerplate code, loggers
-5. Fully dockerized: run the entire application with single command
-   
-    
+* Accepts an Integer between 0 and 3999
+* Submit the number to backend api for converting to roman numeral 
+* It either displays roman numeral or error 
+* Using Java + SpringBoot application for the api 
+* Used spring-boot-starter-web, spring-boot-starter-test, lombok to reduce boilerplate code, loggers 
+* Fully dockerized: run the entire application with single command
+
+
+
     docker compose up --build
 
+### Prerequisites:
+* Java 17
+* npm
+* docker desktop
 
 ### User Interface details
 Front end code is under the folder <B>roman-numeral</B> 
