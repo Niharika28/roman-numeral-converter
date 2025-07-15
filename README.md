@@ -7,8 +7,8 @@
 * Used spring-boot-starter-web, spring-boot-starter-test, lombok to reduce boilerplate code, loggers 
 * Fully dockerized: run the entire application with single command
 
-
-
+   
+    
     docker compose up --build
 
 ### Prerequisites:
